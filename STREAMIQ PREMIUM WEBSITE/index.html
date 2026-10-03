@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="StreamIQ is a MySQL 8.0 OTT streaming analytics database exploring content engagement, subscription revenue, viewing behavior, and database performance.">
+  <title>StreamIQ — OTT Streaming Analytics Database</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a class="wordmark" href="#top" aria-label="StreamIQ home">STREAM<span>IQ</span><i></i></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="primary-nav">
+        <a href="#overview">Overview</a>
+        <a href="#insights">Insights</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#engineering">SQL Engineering</a>
+        <a href="#analytics">Analytics</a>
+        <a class="nav-github" href="https://github.com/vyshnavi05-17/StreamIQ-OTT-SQL/tree/main" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" aria-labelledby="hero-title">
+      <h1 class="visually-hidden" id="hero-title">StreamIQ — OTT Streaming Analytics Database</h1>
+      <div class="hero-animation-frame">
+        <video class="hero-animation" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="assets/streamiq_text_animation_amber.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section class="section section-overview" id="overview" aria-labelledby="overview-title">
+      <div class="overview-intro">
+        <figure class="project-film-frame reveal">
+          <video class="film-strip-video" autoplay muted loop playsinline preload="metadata" aria-label="The supplied StreamIQ looping film-strip animation">
+            <source src="assets/streamiq-film-strip.mp4" type="video/mp4">
+          </video>
+        </figure>
+        <div class="project-intro-copy reveal">
+          <p class="eyebrow">THE PROJECT <span>01 — 04</span></p>
+          <h2 id="overview-title">From Data <em>→</em><br>To Insights</h2>
+          <p class="project-lead">A production-style relational SQL project designed to explore streaming users, content engagement, subscriptions, payments, and viewing behavior.</p>
+          <p class="project-description">StreamIQ transforms structured streaming data into meaningful business insights through relational database design, advanced SQL analytics, and performance-focused engineering. Analyze what users watch, how they engage, which content performs, and how subscriptions generate revenue.</p>
+          <div class="project-actions">
+            <a class="button button-primary" href="http://127.0.0.1:4178/index.html#overview">Explore Project <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="https://github.com/vyshnavi05-17/StreamIQ-OTT-SQL/tree/main" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="project-tech-label"><span>MYSQL 8.0</span><strong>RELATIONAL ANALYTICS</strong></div>
+        </div>
+      </div>
+      <div class="dataset-heading reveal"><p class="eyebrow">THE DATASET <span>VERIFIED PROJECT METRICS</span></p><h3>Streaming, <em>in numbers.</em></h3></div>
+      <div class="metric-grid">
+        <article class="metric-card reveal"><span class="metric-value" data-value="20">20</span><span class="metric-label">Users</span><span class="metric-index">01</span></article>
+        <article class="metric-card reveal"><span class="metric-value" data-value="27">27</span><span class="metric-label">Profiles</span><span class="metric-index">02</span></article>
+        <article class="metric-card reveal"><span class="metric-value" data-value="20">20</span><span class="metric-label">Content titles</span><span class="metric-index">03</span></article>
+        <article class="metric-card reveal"><span class="metric-value" data-value="69">69</span><span class="metric-label">Watch sessions</span><span class="metric-index">04</span></article>
+        <article class="metric-card reveal"><span class="metric-value" data-value="4084">4,084</span><span class="metric-label">Watch minutes</span><span class="metric-index">05</span></article>
+        <article class="metric-card reveal"><span class="metric-value" data-value="77.59" data-decimals="2" data-suffix="%">77.59%</span><span class="metric-label">Average completion</span><span class="metric-index">06</span></article>
+        <article class="metric-card reveal"><span class="metric-value" data-value="30">30</span><span class="metric-label">Subscriptions</span><span class="metric-index">07</span></article>
+        <article class="metric-card metric-card-highlight reveal"><span class="metric-value" data-value="51647" data-prefix="₹">₹51,647</span><span class="metric-label">Successful revenue</span><span class="metric-index">08</span></article>
+      </div>
+      <div class="dataset-ribbon reveal">
+        <span>25 DEVICES</span><i></i><span>5 SUBSCRIPTION PLANS</span><i></i><span>20 CONTENT</span><i></i><span>50 EPISODES</span><i></i><span>12 GENRES</span><i></i><span>30 ACTORS</span><i></i><span>55 PAYMENTS</span><i></i><span>40 RATINGS</span>
+      </div>
+    </section>
+
+    <section class="section section-insights" id="insights" aria-labelledby="insights-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE SIGNAL <span>02 — 04</span></p>
+        <h2 id="insights-title">KEY <em>FINDINGS</em></h2>
+        <p class="section-intro">A closer look at engagement, subscription lifecycle, payment revenue, and known-device viewing.</p>
+      </div>
+      <div class="insight-grid">
+        <article class="insight-panel insight-engagement reveal">
+          <div class="panel-heading"><span class="panel-number">01</span><div><p class="eyebrow">CONTENT ENGAGEMENT</p><h3>Stories that hold attention.</h3></div></div>
+          <div class="compare-row"><div class="compare-meta"><span>The Quantum Key</span><strong>90.57<small>%</small></strong></div><div class="bar-track"><span class="bar-fill" style="--bar:90.57%"></span></div></div>
+          <div class="compare-row"><div class="compare-meta"><span>The Forgotten Kingdom</span><strong>85.13<small>%</small></strong></div><div class="bar-track"><span class="bar-fill" style="--bar:85.13%"></span></div></div>
+          <p class="panel-note">Average completion across watch sessions</p>
+        </article>
+        <article class="insight-panel reveal">
+          <div class="panel-heading"><span class="panel-number">02</span><div><p class="eyebrow">SUBSCRIPTION LIFECYCLE</p><h3>30 subscriptions. One clear split.</h3></div></div>
+          <div class="lifecycle">
+            <div class="lifecycle-ring" role="img" aria-label="80 percent active and 20 percent cancelled subscriptions"><div><strong>80<small>%</small></strong><span>ACTIVE</span></div></div>
+            <div class="lifecycle-legend"><div><i class="legend-dot gold-dot"></i><span>Active</span><strong>24</strong></div><div><i class="legend-dot muted-dot"></i><span>Cancelled</span><strong>6</strong></div></div>
+          </div>
+          <p class="panel-note">20% subscription cancellation rate <span class="note-mark">—</span> not customer churn</p>
+        </article>
+        <article class="insight-panel reveal">
+          <div class="panel-heading"><span class="panel-number">03</span><div><p class="eyebrow">SUCCESSFUL PAYMENT REVENUE</p><h3><span class="rupee">₹</span>51,647 <small>total</small></h3></div></div>
+          <div class="plan-bars">
+            <div class="plan-row"><span>Premium Annual</span><span class="plan-track"><i style="--bar:100%"></i></span><strong>₹23,997</strong></div>
+            <div class="plan-row"><span>Premium</span><span class="plan-track"><i style="--bar:53.28%"></i></span><strong>₹12,784</strong></div>
+            <div class="plan-row"><span>Standard</span><span class="plan-track"><i style="--bar:43.67%"></i></span><strong>₹10,479</strong></div>
+            <div class="plan-row"><span>Basic</span><span class="plan-track"><i style="--bar:9.95%"></i></span><strong>₹2,388</strong></div>
+            <div class="plan-row"><span>Basic Annual</span><span class="plan-track"><i style="--bar:8.33%"></i></span><strong>₹1,999</strong></div>
+          </div>
+        </article>
+        <article class="insight-panel reveal">
+          <div class="panel-heading"><span class="panel-number">04</span><div><p class="eyebrow">DEVICE USAGE</p><h3>657 min on known devices.</h3></div></div>
+          <div class="device-total"><strong>9</strong><span>device-tracked sessions</span></div>
+          <div class="device-bars">
+            <div class="device-row"><span class="device-name"><i class="device-glyph">▯</i> Mobile</span><span class="device-track"><i style="--bar:100%"></i></span><strong>256 <small>min</small></strong><b>4 <small>sessions</small></b></div>
+            <div class="device-row"><span class="device-name"><i class="device-glyph">▱</i> Laptop</span><span class="device-track"><i style="--bar:82.03%"></i></span><strong>210 <small>min</small></strong><b>2 <small>sessions</small></b></div>
+            <div class="device-row"><span class="device-name"><i class="device-glyph">▭</i> Smart TV</span><span class="device-track"><i style="--bar:74.61%"></i></span><strong>191 <small>min</small></strong><b>3 <small>sessions</small></b></div>
+          </div>
+          <p class="panel-note">Device analytics can be analyzed across device type, operating system, viewing sessions, and watch duration. Unknown-device attribution is not imputed.</p>
+        </article>
+      </div>
+      <aside class="behavior-note reveal">
+        <span class="behavior-mark">↗</span>
+        <p><strong>Viewing behavior, precisely named.</strong> 19 of 20 profiles had a multi-episode viewing window within 24 hours — a <em>95% multi-episode viewing rate</em>, not a binge rate. The dataset contains <em>zero</em> qualifying 3+ episode binge windows.</p>
+      </aside>
+    </section>
+
+    <section class="section section-content" id="content" aria-labelledby="content-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CATALOG INTELLIGENCE <span>SELECTED TITLES</span></p>
+        <h2 id="content-title">CONTENT <em>PERFORMANCE</em></h2>
+        <p class="section-intro">A title-level view of watch activity, completion, and audience ratings.</p>
+      </div>
+      <div class="content-grid">
+        <article class="content-card reveal"><div class="content-card-top"><span class="content-type">SERIES</span><span class="content-rating"><i>★</i> 4.53</span></div><div class="poster-mark poster-one"><span>DH</span><i></i></div><h3>Dark Horizon</h3><div class="content-stats"><span><strong>9</strong> views</span><span><strong>403</strong> min</span></div><div class="completion-line"><span>Completion</span><strong>75.38%</strong></div><div class="mini-track"><i style="--bar:75.38%"></i></div></article>
+        <article class="content-card reveal"><div class="content-card-top"><span class="content-type">SERIES</span><span class="content-rating"><i>★</i> 4.55</span></div><div class="poster-mark poster-two"><span>QK</span><i></i></div><h3>The Quantum Key</h3><div class="content-stats"><span><strong>5</strong> views</span><span><strong>242</strong> min</span></div><div class="completion-line"><span>Completion</span><strong>90.57%</strong></div><div class="mini-track"><i style="--bar:90.57%"></i></div></article>
+        <article class="content-card reveal"><div class="content-card-top"><span class="content-type">SERIES</span><span class="content-rating"><i>★</i> 4.40</span></div><div class="poster-mark poster-three"><span>FK</span><i></i></div><h3>The Forgotten Kingdom</h3><div class="content-stats"><span><strong>7</strong> views</span><span><strong>296</strong> min</span></div><div class="completion-line"><span>Completion</span><strong>85.13%</strong></div><div class="mini-track"><i style="--bar:85.13%"></i></div></article>
+        <article class="content-card reveal"><div class="content-card-top"><span class="content-type">MOVIE</span><span class="content-rating"><i>★</i> 4.10</span></div><div class="poster-mark poster-four"><span>CD</span><i></i></div><h3>City of Dreams</h3><div class="content-stats"><span><strong>3</strong> views</span><span><strong>309</strong> min</span></div><div class="completion-line"><span>Completion</span><strong>81.75%</strong></div><div class="mini-track"><i style="--bar:81.75%"></i></div></article>
+      </div>
+      <p class="footnote">Completion and rating are averages from the project dataset. Title metrics shown are selected examples.</p>
+    </section>
+
+    <section class="section section-architecture" id="architecture" aria-labelledby="architecture-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE FOUNDATION <span>14 TABLES</span></p>
+        <h2 id="architecture-title">BUILT LIKE A REAL<br><em>STREAMING PLATFORM</em></h2>
+        <p class="section-intro">A connected relational model keeps identity, catalog, viewing, and revenue data in context.</p>
+      </div>
+      <div class="architecture-board reveal" role="img" aria-label="All 14 StreamIQ tables connected across users and plans, content and bridge tables for genres and cast, and profile viewing history and ratings.">
+        <div class="arch-backdrop-grid"></div>
+        <svg class="arch-lines arch-lines--desktop" viewBox="0 0 1000 600" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M166 81V131M166 188V238M500 81V131M606 53H700V481H606M606 481H700V160H727M606 53H655V481H727M939 481H970V267H939M60 53H25V374H60M166 402V452M272 160H370V374H394M166 188H660V374H727M500 24V10H985V374H939M939 53H995V530H272V402"/>
+          <circle cx="25" cy="53" r="3"/><circle cx="660" cy="188" r="3"/><circle cx="700" cy="160" r="3"/><circle cx="970" cy="267" r="3"/>
+        </svg>
+        <svg class="arch-lines arch-lines--mobile" viewBox="0 0 1000 480" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M250 70V83M250 129V142M720 70V83M531 165H460V224H439M909 47H960V342H909M531 224H510V342H531M909 283H960V401H909M61 47H30V224H61M250 247V260M439 106H480V342H439M250 129H500V401H439M720 24V10H30V401H61"/>
+          <circle cx="30" cy="47" r="5"/><circle cx="500" cy="129" r="5"/><circle cx="960" cy="342" r="5"/>
+        </svg>
+        <div class="arch-node node-users"><span>01</span><strong>USERS</strong><small>user_id · identity</small></div>
+        <div class="arch-node node-plans"><span>02</span><strong>SUBSCRIPTION PLANS</strong><small>plan_id · billing cycle</small></div>
+        <div class="arch-node node-profiles"><span>03</span><strong>PROFILES</strong><small>profile_id · preferences</small></div>
+        <div class="arch-node node-devices"><span>04</span><strong>DEVICES</strong><small>device_id · attribution</small></div>
+        <div class="arch-node node-subscriptions"><span>05</span><strong>SUBSCRIPTIONS</strong><small>plan · lifecycle</small></div>
+        <div class="arch-node node-payments"><span>06</span><strong>PAYMENTS</strong><small>status · revenue</small></div>
+        <div class="arch-node node-content"><span>07</span><strong>CONTENT</strong><small>title · type</small></div>
+        <div class="arch-node node-episodes"><span>08</span><strong>EPISODES</strong><small>series detail</small></div>
+        <div class="arch-node node-genres"><span>09</span><strong>GENRES</strong><small>12 genres</small></div>
+        <div class="arch-node node-actors"><span>10</span><strong>ACTORS</strong><small>30 people</small></div>
+        <div class="arch-node node-watch"><span>11</span><strong>WATCH HISTORY</strong><small>time · completion</small></div>
+        <div class="arch-node node-ratings"><span>12</span><strong>RATINGS</strong><small>profile · title</small></div>
+        <div class="arch-node node-content-genres"><span>13</span><strong>CONTENT_GENRES</strong><small>59 genre mappings</small></div>
+        <div class="arch-node node-content-cast"><span>14</span><strong>CONTENT_CAST</strong><small>60 cast mappings</small></div>
+        <div class="arch-center"><span>STREAMIQ</span><b>RELATIONAL CORE</b><i>MySQL 8.0</i></div>
+        <div class="arch-legend"><span><i></i> FOREIGN KEY RELATIONSHIP</span><span>14 TABLES · NORMALIZED MODEL</span></div>
+      </div>
+      <div class="schema-note reveal"><span class="schema-note-line"></span><p><strong>Designed for analytical joins.</strong> Watch events and ratings are aggregated separately in the content-performance view to prevent one-to-many join multiplication.</p></div>
+    </section>
+
+    <section class="section section-engineering" id="engineering" aria-labelledby="engineering-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE TOOLKIT <span>MYSQL 8.0</span></p>
+        <h2 id="engineering-title">ENGINEERED <em>WITH SQL</em></h2>
+        <p class="section-intro">Database fundamentals combined with reusable objects and deliberate query tuning.</p>
+      </div>
+      <div class="engineering-grid">
+        <article class="engineering-card reveal"><span class="tech-icon icon-schema">⌘</span><p class="eyebrow">01 / FOUNDATION</p><h3>Database design</h3><p>Normalization, primary keys, foreign keys, and explicit relationships.</p><div class="tag-list"><span>NORMALIZED MODEL</span><span>REFERENTIAL INTEGRITY</span></div></article>
+        <article class="engineering-card reveal"><span class="tech-icon icon-query">∑</span><p class="eyebrow">02 / ANALYSIS</p><h3>Advanced SQL</h3><p>CTEs, subqueries, CASE expressions, date functions, and window functions.</p><div class="tag-list"><span>CTEs</span><span>WINDOWS</span></div></article>
+        <article class="engineering-card reveal"><span class="tech-icon icon-objects">◇</span><p class="eyebrow">03 / REUSE</p><h3>Database objects</h3><p>Views, stored procedures, functions, and triggers for repeatable logic.</p><div class="tag-list"><span>3 VIEWS</span><span>4 PROCEDURES</span></div></article>
+        <article class="engineering-card reveal"><span class="tech-icon icon-performance">↗</span><p class="eyebrow">04 / PERFORMANCE</p><h3>Query optimization</h3><p>Composite indexes, EXPLAIN analysis, and evidence-led query tuning.</p><div class="tag-list"><span>3 INDEXES</span><span>EXPLAIN</span></div></article>
+      </div>
+    </section>
+
+    <section class="section section-questions" id="analytics" aria-labelledby="analytics-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">BUSINESS QUESTIONS <span>SQL → ANSWERS</span></p>
+        <h2 id="analytics-title">QUESTIONS THE<br><em>DATABASE CAN ANSWER</em></h2>
+        <p class="section-intro">Practical analytics, expressed as queries against a connected streaming model.</p>
+      </div>
+      <div class="question-grid">
+        <article class="question-card reveal"><span class="question-no">01</span><h3>Which content has the highest engagement?</h3><code>AVG(completion_percentage)<br>GROUP BY content_id<br>ORDER BY completion DESC</code></article>
+        <article class="question-card reveal"><span class="question-no">02</span><h3>Which plans generate the most revenue?</h3><code>SUM(successful payments)<br>GROUP BY plan_name<br>ORDER BY revenue DESC</code></article>
+        <article class="question-card reveal"><span class="question-no">03</span><h3>How many subscriptions were cancelled?</h3><code>COUNT(CASE WHEN status =<br>'CANCELLED' THEN 1 END)<br>— subscription rate, not churn</code></article>
+        <article class="question-card reveal"><span class="question-no">04</span><h3>Which devices consume the most watch time?</h3><code>SUM(watch_duration_minutes)<br>GROUP BY device_type<br>ORDER BY minutes DESC</code></article>
+        <article class="question-card reveal"><span class="question-no">05</span><h3>Which genres receive the highest ratings?</h3><code>AVG(rating)<br>JOIN content_genres<br>GROUP BY genre_id</code></article>
+        <article class="question-card reveal"><span class="question-no">06</span><h3>Which profiles are the most engaged?</h3><code>SUM(watch minutes)<br>COUNT(DISTINCT content_id)<br>GROUP BY profile_id</code></article>
+        <article class="question-card reveal"><span class="question-no">07</span><h3>How does watch completion vary by content?</h3><code>AVG(completion_percentage)<br>GROUP BY content_id<br>COMPARE by content type</code></article>
+        <article class="question-card reveal"><span class="question-no">08</span><h3>Which users resubscribed after cancellation?</h3><code>LAG(subscription_status)<br>OVER (PARTITION BY user_id<br>ORDER BY start_date)</code></article>
+      </div>
+      <div class="query-showcase reveal">
+        <div class="query-label"><span class="status-pulse"></span> CONTENT ENGAGEMENT QUERY <span>MYSQL</span></div>
+        <pre><code><span class="sql-keyword">SELECT</span>
+    c.title,
+    <span class="sql-function">AVG</span>(wh.completion_percentage) <span class="sql-keyword">AS</span> avg_completion
+<span class="sql-keyword">FROM</span> content c
+<span class="sql-keyword">JOIN</span> watch_history wh <span class="sql-keyword">ON</span> c.content_id = wh.content_id
+<span class="sql-keyword">GROUP BY</span> c.content_id, c.title
+<span class="sql-keyword">ORDER BY</span> avg_completion <span class="sql-keyword">DESC</span>;</code></pre>
+      </div>
+    </section>
+
+    <section class="section section-objects" aria-labelledby="objects-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">REUSABLE BY DESIGN <span>DATABASE OBJECTS</span></p>
+        <h2 id="objects-title">LOGIC THAT LIVES<br><em>CLOSE TO THE DATA</em></h2>
+      </div>
+      <div class="object-grid">
+        <article class="object-card reveal"><span class="object-number" data-value="3" data-pad="2">03</span><span class="eyebrow">VIEWS</span><h3>Reusable analytical datasets</h3><p>Content Performance<br>Profile Engagement<br>Subscription Revenue</p></article>
+        <article class="object-card reveal"><span class="object-number" data-value="3" data-pad="2">03</span><span class="eyebrow">FUNCTIONS</span><h3>Focused business logic</h3><p>Age · subscription duration<br>User engagement</p></article>
+        <article class="object-card reveal"><span class="object-number" data-value="4" data-pad="2">04</span><span class="eyebrow">STORED PROCEDURES</span><h3>Repeatable operations</h3><p>Register user · record watch<br>Cancel subscription · record payment</p></article>
+        <article class="object-card reveal"><span class="object-number" data-value="2" data-pad="2">02</span><span class="eyebrow">TRIGGERS</span><h3>Rules at the database layer</h3><p>Successful payment activation<br>Rating range validation</p></article>
+        <article class="object-card reveal"><span class="object-number" data-value="3" data-pad="2">03</span><span class="eyebrow">PERFORMANCE INDEXES</span><h3>Paths for frequent lookups</h3><p>Profile + watch start<br>Content · payment date + status</p></article>
+      </div>
+    </section>
+
+    <section class="section section-quality" aria-labelledby="quality-title">
+      <div class="quality-copy reveal">
+        <p class="eyebrow">TRUST THE MODEL <span>VALIDATION</span></p>
+        <h2 id="quality-title">DATA INTEGRITY<br><em>MATTERS.</em></h2>
+        <p class="section-intro">Validation checks make the analytical foundation as dependable as the insights built on top of it.</p>
+        <div class="quality-tags"><span>FOREIGN KEYS</span><span>ORPHAN RECORDS</span><span>PAYMENT VALIDITY</span><span>RATING CONSTRAINTS</span><span>UNIQUE RELATIONSHIPS</span><span>EPISODE / CONTENT</span></div>
+      </div>
+      <div class="quality-results">
+        <article class="quality-result reveal"><span class="quality-check">✓</span><strong>0</strong><span>Orphan records</span><small>REFERENTIAL INTEGRITY</small></article>
+        <article class="quality-result reveal"><span class="quality-check">✓</span><strong>0</strong><span>Invalid payments</span><small>PAYMENT VALIDATION</small></article>
+        <article class="quality-result reveal"><span class="quality-check">✓</span><strong>0</strong><span>Invalid episode relationships</span><small>CONTENT CONSISTENCY</small></article>
+      </div>
+    </section>
+
+    <section class="section section-performance" aria-labelledby="performance-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">QUERY PLAN <span>INDEXED ACCESS</span></p>
+        <h2 id="performance-title">BUILT FOR <em>PERFORMANCE</em></h2>
+        <p class="section-intro">EXPLAIN confirms the intended composite index is selected for profile-specific viewing history.</p>
+      </div>
+      <div class="performance-layout reveal">
+        <div class="terminal">
+          <div class="terminal-bar"><span class="terminal-dots"><i></i><i></i><i></i></span><span>streamiq / explain_analysis.sql</span><span>MYSQL 8.0</span></div>
+          <pre><code><span class="sql-comment">-- Indexes created for common access patterns</span>
+<span class="sql-keyword">CREATE INDEX</span> idx_watch_profile_start
+  <span class="sql-keyword">ON</span> watch_history(profile_id, watch_start);
+
+<span class="sql-keyword">CREATE INDEX</span> idx_watch_content
+  <span class="sql-keyword">ON</span> watch_history(content_id);
+
+<span class="sql-keyword">CREATE INDEX</span> idx_payments_date_status
+  <span class="sql-keyword">ON</span> payments(payment_date, payment_status);
+
+<span class="sql-keyword">EXPLAIN SELECT</span> profile_id, watch_start
+<span class="sql-keyword">FROM</span> watch_history <span class="sql-keyword">WHERE</span> profile_id = 1
+<span class="sql-keyword">ORDER BY</span> watch_start;</code></pre>
+        </div>
+        <div class="explain-side"><p class="eyebrow">VERIFIED EXPLAIN RESULT</p><div class="explain-table"><div><span>type</span><strong>ref</strong></div><div><span>key</span><strong>idx_watch_profile_start</strong></div><div><span>rows</span><strong>5</strong></div><div><span>filtered</span><strong>100%</strong></div></div><p class="explain-note">MySQL uses the composite profile/watch-start index to efficiently retrieve profile-specific watch history ordered by watch time.</p></div>
+      </div>
+    </section>
+
+    <section class="section section-story" aria-labelledby="story-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE METHOD <span>DATA → SQL → INSIGHT</span></p>
+        <h2 id="story-title">A STREAMING STORY,<br><em>IN FOUR STEPS.</em></h2>
+      </div>
+      <div class="story-line reveal">
+        <article class="story-step"><span class="story-index">01</span><span class="story-node"></span><p class="eyebrow">CAPTURE</p><h3>Model the platform.</h3><p>Users, profiles, content, subscriptions, payments, and watch activity.</p></article>
+        <article class="story-step"><span class="story-index">02</span><span class="story-node"></span><p class="eyebrow">ANALYZE</p><h3>Ask better questions.</h3><p>Joins, CTEs, window functions, aggregations, and date analysis.</p></article>
+        <article class="story-step"><span class="story-index">03</span><span class="story-node"></span><p class="eyebrow">OPTIMIZE</p><h3>Read the query plan.</h3><p>Indexes and EXPLAIN evaluate how efficiently queries can run.</p></article>
+        <article class="story-step"><span class="story-index">04</span><span class="story-node"></span><p class="eyebrow">DISCOVER</p><h3>Turn data into insight.</h3><p>Understand engagement, revenue, subscription, and content patterns.</p></article>
+      </div>
+    </section>
+
+    <section class="github-cta" id="github" aria-labelledby="github-title">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="cta-content reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> THE COMPLETE PROJECT</p>
+        <h2 id="github-title">EXPLORE THE<br><em>SQL PROJECT</em></h2>
+        <p>Explore the complete StreamIQ database, queries, views, procedures, functions, triggers, and optimization scripts.</p>
+        <a class="button button-primary button-large" href="https://github.com/vyshnavi05-17/StreamIQ-OTT-SQL/tree/main" target="_blank" rel="noopener noreferrer">View project on GitHub <span aria-hidden="true">→</span></a>
+        <span class="cta-repo">GITHUB <i>·</i> VYSHNAVI05-17 / STREAMIQ-OTT-SQL</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><a class="wordmark" href="#top">STREAM<span>IQ</span><i></i></a><p>OTT Streaming Analytics Database</p><small>Built with MySQL 8.0</small></div>
+    <div class="footer-tags"><span>SQL</span><span>Analytics</span><span>Database Design</span><span>Optimization</span></div>
+    <div class="footer-links"><a href="https://github.com/vyshnavi05-17/StreamIQ-OTT-SQL/tree/main" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a><span class="footer-link-static">LinkedIn</span></div>
+    <div class="footer-bottom"><span>STREAMIQ · FROM DATA TO INSIGHT</span><a href="#top">BACK TO TOP ↑</a></div>
+  </footer>
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+</body>
+</html>
