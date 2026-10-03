@@ -1,0 +1,3 @@
+StreamIQ-OTT-SQL complete GitHub project package.
+Contains schema, data, basic/advanced SQL, views, procedures, functions,
+triggers, indexes, optimization analysis, README, and ER diagram.
